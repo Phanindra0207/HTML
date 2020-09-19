@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+body{
+    background-color:black;
+    }
+    
+    
+    
+        
+        .navbar{
+    background-color:wheat;
+    padding:0px;
+    
+    
+    }
+    .nav-link{
+    font-size:30px;
+    color:black;
+    
+    
+    }
+    
+    
+         .nav-link:hover{
+            background-color:black;
+            color:wheat;
+            
+    
+        }
+    </style>    
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+        <a class="navbar-brand" href="gallery.html"><img src="iplicon.jpeg"  height=50px width=80px></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#mynav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div  class="collapse navbar-collapse" id="mynav">
+            
+                
+        <ul class="navbar-nav">
+    
+            <li class="nav-item"><a class="nav-link"  href="ipl2019.html">IPL 2019</a></li>
+            <li class="nav-item"><a class="nav-link"  href="ipl2018.html">IPL 2018</a></li>
+            <li class="nav-item"><a class="nav-link"  href="ipl2017.html">IPL 2017</a></li>
+            <li class="nav-item"><a class="nav-link"  href="ipl2016.html">IPL 2016</a></li>
+        </ul>
+        <ul class=" navbar-nav ml-auto mr-2">
+            <li class="nav-item mr-2 my-2"> <a href="contact.html" class="btn btn-success" role="button" >Contact Us</button></a></li>
+             <li class="nav-item my-2"><button class="btn btn-success  " type="button" data-toggle="modal" data-target="#mymodal">Login</button></li>
+       </ul>
+         </div>
+        </nav><br><br>
+        <div class="modal fade" id="mymodal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       <h4 class="modal-title"> LOGIN TO JOIN US</h4>
+                   <button type="button" class="close" data-dismiss="modal">
+                       &times;
+                   </button>
+                </div>
+                   <div class="modal-body">
+                       <div class="input-group mb-3">
+                           <div class="input-group-prepend">
+                            <span class="input-group-text">Username</span>
+                           </div>
+                           <input type="text" class="form-control" placeholder="Enter your name">
+                       </div>
+                       <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Password</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Password">
+                    </div>
+                    
+                   </div>
+                   <div class="modal-footer">
+                       <button type="button"  class="btn btn-danger" data-dismiss="modal">
+                           Close
+                       </button>
+                   </div>
+                    
+    
+                </div>
+    
+            </div>
+        </div>
+    <div class="container" style="background-color: aquamarine;">
+    <center>  <h2 class="display-4">Contact US</h2></center>
+       
+        
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    Mobile
+                </span>
+                
+            </div>
+            <input type="text" name="mobile" id="mobile" class="form-control" placeholder="Mobile Number" required>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    Email
+                </span>
+            </div>
+           
+            <input type="mail" name="email" id="email" class="form-control" placeholder="abc@gmail.com" required>
+        </div>
+    <br><br>
+    <center><h3 class="display-5">Add description/queries</h3></center>
+    <textarea class="form-control" id="query" rows="5" ></textarea>
+
+    <br>
+   <center> <button type="button" class="btn btn-primary" onclick="submit()">Submit</button></center><br>
+    <div style="background-color:black;color:cadetblue;width:20%;margin-left: 40%;">
+    <h4 >contact us on:</h4>
+    India Toll-Free:
+1800-234-5678<br>
+
+International:
+1-123-456-7890
+</div>
+<br><br>
+    </div>
+    <script>
+        
+        function submit(){
+            alert("submitted successfully!!");
+            var mobile=document.getElementById("mobile").value;
+            console.log(mobile);
+            var email=document.getElementById("email").value;
+            console.log(email);
+            var query=document.getElementById("query").value;
+            console.log(query);
+        }
+    </script>
+    
+</body>
+</html>
